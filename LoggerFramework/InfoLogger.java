@@ -6,8 +6,8 @@ public class InfoLogger extends AbstractLogger{
         this.level = level;
     }
 
-    @Override
-    public void display(String msg) {
-        System.out.println("INFO: "+msg);
+    public void display(String msg,LogProducer logProducer) {
+        String message =  "INFO | " + msg;
+        logProducer.notifyAll(1,message);
     }
 }

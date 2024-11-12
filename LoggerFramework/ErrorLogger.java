@@ -7,7 +7,8 @@ public class ErrorLogger extends AbstractLogger{
     }
 
     @Override
-    public void display(String msg) {
-        System.out.println("ERROR: "+msg);
+    public void display(String msg,LogProducer logProducer) {
+        String message =  "ERROR | " + msg;
+        logProducer.notifyAll(2,message);
     }
 }

@@ -6,7 +6,8 @@ public class DebugLogger extends AbstractLogger{
         this.level = level;
     }
     @Override
-    public void display(String msg) {
-        System.out.println("DEBUG: "+msg);
+    public void display(String msg,LogProducer logProducer) {
+        String message =  "DEBUG" + msg;
+        logProducer.notifyAll(3,message);
     }
 }
