@@ -25,6 +25,7 @@ public class ElevatorController {
         Request request = strategy.getBestRequest(elevator,requestQueue);
         if (request != null) {
             ConcurrentHashMap<Request,Integer> byPassMap = new ConcurrentHashMap<>();
+
             requestQueue.remove(request);
             // Phase 1: Go to the source floor
             int sourceFloor = request.getSourceFloor();
