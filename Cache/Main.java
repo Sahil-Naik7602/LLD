@@ -1,7 +1,8 @@
 public class Main {
     public static void main(String[] args) {
 //        LFUCacheBruteForce cache = new LFUCacheBruteForce(3);
-        LFUCacheDobleLL cache = new LFUCacheDobleLL(3);
+//        LFUCacheDobleLL cache = new LFUCacheDobleLL(3);
+        LRUCacheDoubleLL cache = new LRUCacheDoubleLL(3);
         cache.put(1,600);
         cache.put(2,400);
 //        cache.printFrequencyTable();

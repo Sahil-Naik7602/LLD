@@ -57,4 +57,14 @@ public class DoubleLinkedList {
     public Integer len(){
         return this.n;
     }
+
+    public void printLL(){
+        Node tempNode = head.next;
+        while (tempNode != tail){
+            System.out.print(tempNode.getKey()+"->");
+            tempNode = tempNode.next;
+        }
+        System.out.println();
+    }
+
 }
