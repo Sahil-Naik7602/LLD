@@ -19,8 +19,6 @@ public class main {
         meetingScheduler.bookMeeting(user4,userList1,curTime+15000,curTime+18000,meetRoom1,"Taxation");
         meetingScheduler.bookMeeting(user5,userList1,curTime+12000,curTime+20000,meetRoom1,"Investing");
         meetingScheduler.executeAllMeetings();
-
-
     }
 
 }
